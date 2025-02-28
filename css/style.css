@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+.pixelify-sans-pixel{
+    font-family: "Pixelify Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+}
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pixelify Sans", serif;
+  
+}
+
+:root {
+  --color-AzulFuerte: #12009e;
+  --color-AzulNormal: #2da7ee;
+  --color-AzulDebil: #97d9ff;
+  --color-rosado: #F898A0;
+  --color-rojoSuperior: #E83030;
+  --color-rojoMedio: #C02028;
+  --color-rojoInferior: #901020;
+  --color-fondo: #F8F8F8;
+  --color-linea: #BBBBBB;
+  --color-texto: #585850;
+  --color-oscuro: #1d0505;
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 6fr;
+}
+
+.encabezado{
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr 3fr;
+  box-shadow: 0px 25px 10px var(--color-linea);
+  border-bottom: 10px solid var(--color-oscuro)
+}
+.encabezado__superior{
+background-color: var(--color-rojoSuperior);
+display: flex;
+justify-content: center;
+color: var(--color-fondo);
+font-size: 40px;
+}
+.encabezado__medio{
+background-color: var(--color-rojoMedio);
+display: flex;
+justify-content: center;
+color: var(--color-fondo);
+}
+.encabezado__inferior{
+background-color: var(--color-rojoInferior);
+display: flex;
+justify-content: center;
+color: var(--color-fondo);
+}
+.listas{
+  z-index: 1;
+  background-image: url(../img/fondo.png);
+  margin-top: 30px;
+  display: grid;
+    grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+justify-content: center;
+}
+.listas__ejercicios{
+  display: flex;
+  flex-wrap: wrap;
+  grid-column: 1;
+  grid-row: 1;
+  justify-content: center;
+  width: 95vw;
+  height: 65vh;
+}
+.listas__items{
+  list-style: none;
+  background-color: var(--color-fondo);
+  border-left: 30px solid var(--color-rojoSuperior);
+  border-right: 30px solid var(--color-rojoSuperior);
+  margin: 20px;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 0px 5px var(--color-oscuro);
+  border-radius: 5px;
+  z-index: 1;
+  transition: 0.2s;
+}
+.listas__texto{
+  width: 300px;
+  height: 100px;
+  border: 8px solid var(--color-rosado);
+  color: var(--color-texto);
+  text-decoration: none;
+  font-size: 36px;
+  transition: 0.2s;
+}
+.listas__imagen{
+  z-index: 0;
+  width: 750px;
+  height: 750px;
+  background-image: url(../img/pokeball.png);
+  background-size: cover;
+  grid-column: 1;
+  grid-row: 1;
+  margin: auto;
+}
+.listas__items:hover{
+  background-color: var(--color-fondo);
+  border-left: 30px solid var(--color-AzulNormal);
+  border-right: 30px solid var(--color-AzulNormal );
+  box-shadow: 0px 0px 0px 5px var(--color-AzulFuerte);
+}
+.listas__items:hover .listas__texto{
+  border: 8px solid var(--color-AzulDebil);
+  color: var(--color-AzulFuerte);
+}
