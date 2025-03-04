@@ -9,7 +9,13 @@
   border-radius: 5px;
   font-size: 36px;
 }
-.listas{
+.listas__informacion{
   display: flex;
-  flex-direction: column;
+  gap: 40px;
+}
+.listas__pokedex{
+  height: 590;
+  width: 530px;
+  background-image: url(../img/sandslash.gif);
+  background-size: cover;
 }
