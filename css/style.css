@@ -10,7 +10,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Pixelify Sans", serif;
-  
 }
 
 :root {
@@ -32,7 +31,8 @@
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 200vh;
+  grid-template-rows: 1fr 100vh;
+  overflow-x:hidden;
 }
 
 .encabezado{
@@ -62,14 +62,17 @@ display: flex;
 justify-content: center;
 color: var(--color-fondo);
 }
+.pantalla{
+  background-image: url(../img/fondo.png);
+  height: 200vh;
+}
 .listas{
   z-index: 1;
-  background-image: url(../img/fondo.png);
   margin-top: 30px;
   display: grid;
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-justify-content: center;
+  justify-content: center;
 }
 .listas__ejercicios{
   display: flex;
@@ -78,7 +81,7 @@ justify-content: center;
   grid-row: 1;
   justify-content: center;
   width: 95vw;
-  height: 65vh;
+  height: 25vh;
 }
 .listas__items{
   list-style: none;
