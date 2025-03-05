@@ -8,7 +8,7 @@ const find = (callback,condicional) => {
       x = array.length;
     }
     }
-  arrayFind.length >= 1 ? alert("True") : alert("Undefined");
+  arrayFind.length >= 1 ? alert(`True ${arrayFind[0]}`) : alert("Undefined");
 };
 setTimeout(() => {
   const condicional = () => {

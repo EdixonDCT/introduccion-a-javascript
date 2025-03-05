@@ -17,9 +17,9 @@
   margin-top: 50px;
 }
 .listas__pokedex{
-  height:calc(85px*5);
-  width:calc(96px*5);
-  background-image: url(../img/electivire.gif);
+  height:calc(24px*5);
+  width:calc(35px*5);
+  background-image: url(../img/swinub.gif);
   background-size: cover;
   margin: 0 auto;
 }
