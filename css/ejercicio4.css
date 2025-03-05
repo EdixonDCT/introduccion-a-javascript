@@ -17,9 +17,9 @@
   margin-top: 50px;
 }
 .listas__pokedex{
-  height:calc(84px*5);
-  width:calc(98px*5);
-  background-image: url(../img/rotom.gif);
+  height:calc(59px*5);
+  width:calc(43px*5);
+  background-image: url(../img/totodile.gif);
   background-size: cover;
   margin: 0 auto;
 }
