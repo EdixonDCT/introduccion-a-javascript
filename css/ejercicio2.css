@@ -18,8 +18,8 @@
 }
 .listas__pokedex{
   height:calc(71px*5);
-  width:calc(68px*5);
-  background-image: url(../img/lapras.gif);
+  width:calc(86px*5);
+  background-image: url(../img/nidoking.gif);
   background-size: cover;
   margin: 0 auto;
 }
