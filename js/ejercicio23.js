@@ -21,7 +21,7 @@ const reglas = {
         console.log(`Error: '${value}' no es válido para '${prop}' (se esperaba tipo: ${tipo}).`);
         return false; // No se asigna el valor
       }
-      console.log(`✅ Correcto: '${value}' ha sido ingresado en '${prop}'.`);
+      console.log(`Correcto: '${value}' ha sido ingresado en '${prop}'.`);
       return true; // No se asigna el valor, solo se muestra el log
     }
   };
