@@ -30,9 +30,9 @@ const reglas = {
 
   proxyValidacion.edad = 25;
   proxyValidacion.edad = "abc";
-  proxyValidacion.nombre = "Juan";
+  proxyValidacion.nombre = "Edixon";
   proxyValidacion.nombre = "123";
-  proxyValidacion.correo = "test@mail.com";
+  proxyValidacion.correo = "edixondelta2022@mail.com";
   proxyValidacion.correo = "test@mail";
   proxyValidacion.fechaNacimiento = "2023-05-10";
   proxyValidacion.fechaNacimiento = "hoy";
