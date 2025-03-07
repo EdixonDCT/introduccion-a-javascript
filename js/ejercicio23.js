@@ -7,13 +7,13 @@ const reglas = {
   
   const handler = {
     set(obj, prop, value) {
-      if (typeof value === "string") value = value.trim(); // Eliminar espacios extras
+      if (typeof value === "string") value = value.trim(); //El valor trim elimina los espacios
   
-      // Determinar qué tipo de validación aplicar según el nombre de la propiedad
+      //el prop.incluye lee el nombre del llamado del proxy
       let tipo = "";
-      if (prop.includes("edad") || prop.includes("cantidad")) tipo = "numero";
-      else if (prop.includes("nombre") || prop.includes("apellido")) tipo = "alfanumerico";
-      else if (prop.includes("correo") || prop.includes("email")) tipo = "email";
+      if (prop.includes("edad")) tipo = "numero";
+      else if (prop.includes("nombre")) tipo = "alfanumerico";
+      else if (prop.includes("correo")) tipo = "email";
       else if (prop.includes("fecha")) tipo = "date";
   
       // Aplicar validación si hay una regla definida

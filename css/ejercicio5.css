@@ -1,6 +1,6 @@
 @import url(ejercicios.css);
 .listas__pokedex{
-  height:calc(71px*5);
-  width:calc(68px*5);
-  background-image: url(../img/lapras.gif);
+  height:calc(72px*5);
+  width:calc(82px*5);
+  background-image: url(../img/feraligatr.gif);
 }

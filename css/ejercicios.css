@@ -4,22 +4,26 @@
   color: var(--color-texto);
   border-left: 50px solid var(--color-rojoSuperior);
   border-right: 50px solid var(--color-rojoSuperior);
-  width: 95vw;
   box-shadow: 0px 0px 0px 5px var(--color-oscuro);
   border-radius: 5px;
   font-size: 36px;
-  width: 700px;
   margin-top: 50px;
+  grid-column: 1;
+  grid-row: 1;
 }
 .listas__informacion{
-  width: 95vw;
-  display: flex;
+  width: 80vw;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 .listas__pokedex{
   background-size: cover;
   margin: 0 auto;
   margin-top: 100px;
+  grid-column: 2;
+  grid-row: 1;
 }
 .pantalla{
   height: 150vh;
